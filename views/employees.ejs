@@ -1,0 +1,17 @@
+<table>
+    <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Title</th>
+    <th>Salary</th>
+    </tr>
+    <% employees.forEach((employee) =>
+    { %>
+    <tr>
+    <td><%= employee._id %></td>
+    <td><%= employee.name %></td>
+    <td><%= employee.title %></td>
+    <td><%= employee.salary %></td>
+    </tr>
+    <% }) %>
+    </table>
